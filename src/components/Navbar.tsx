@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 
-const LINKS = ['Labs', 'Studio', 'Openings', 'Shop']
+const LINKS = ['Laboratório', 'Estúdio', 'Vagas', 'Loja']
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -42,13 +42,13 @@ export default function Navbar() {
           href="#"
           className="hidden md:inline text-[23px] text-black underline underline-offset-2 hover:opacity-60 transition-opacity"
         >
-          Get in touch
+          Fale conosco
         </a>
 
         <button
           type="button"
           className="md:hidden flex flex-col gap-[5px] p-1"
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label={open ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
         >
@@ -90,7 +90,7 @@ export default function Navbar() {
           className="text-[32px] font-medium text-black underline underline-offset-2 hover:opacity-60 transition-opacity"
           onClick={() => setOpen(false)}
         >
-          Get in touch
+          Fale conosco
         </a>
       </div>
     </>

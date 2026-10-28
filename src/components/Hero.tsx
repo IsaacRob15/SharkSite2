@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useTypewriter } from '../hooks/useTypewriter'
 
-const TYPEWRITER_TEXT = 'Glad you stopped in. Good taste tends to find us. Now, what are we building?'
+const TYPEWRITER_TEXT = 'Que bom que você passou por aqui. Bom gosto costuma nos encontrar. Agora, o que vamos construir?'
 const EMAIL = 'hello@mainframe.co'
-const ACTIONS = ['Pitch us an idea', 'Come work here', 'Send a brief hello', 'See how we operate']
+const ACTIONS = ['Proponha uma ideia', 'Trabalhe com a gente', 'Mande um oi', 'Veja como trabalhamos']
 
 const pillBase =
   'inline-flex items-center justify-center rounded-full border text-[13px] sm:text-[15px] px-4 sm:px-5 py-[0.3em] mx-[0.2em] mb-[0.4em] whitespace-nowrap transition-colors duration-200'
@@ -46,9 +46,9 @@ export default function Hero() {
             filter: 'blur(4px)',
           }}
         >
-          Hey there, meet A.R.I.A,
+          Olá, conheça a A.R.I.A,
           <br />
-          Mainframe&apos;s Adaptive Response Interface Agent
+          Agente de Interface de Resposta Adaptativa da Mainframe
         </p>
 
         <p
@@ -89,7 +89,7 @@ export default function Hero() {
             className={`${pillBase} gap-2 sm:gap-3 text-white bg-transparent border-white hover:bg-white hover:text-black`}
           >
             <span>
-              Reach us: <span className="underline underline-offset-1">{EMAIL}</span>
+              Fale com a gente: <span className="underline underline-offset-1">{EMAIL}</span>
             </span>
             <CopyIcon />
           </button>
