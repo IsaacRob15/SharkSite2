@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seu Nome · Portfólio</title>
+  <meta name="description" content="Portfólio pessoal: projetos, habilidades e contato.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="nav-brand" href="#inicio">Seu Nome</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="visually-hidden">Abrir menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="hero-kicker">Olá, eu sou</p>
+      <h1>Seu Nome</h1>
+      <p class="hero-lead">Desenvolvedor(a) web. Crio sites simples, rápidos e acessíveis.</p>
+      <a class="button" href="#projetos">Ver projetos</a>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre mim</h2>
+      <p>Escreva aqui um parágrafo curto sobre você: o que faz, o que estuda e o que procura.</p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="section">
+      <h2>Projetos</h2>
+      <div class="filters" role="group" aria-label="Filtrar projetos">
+        <button type="button" class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter" data-filter="design" aria-pressed="false">Design</button>
+      </div>
+      <ul class="projects" id="project-list"></ul>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <form class="contact-form" id="contact-form" novalidate>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button class="button" type="submit">Enviar</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="ano"></span> Seu Nome</p>
+  </footer>
+</body>
+</html>
